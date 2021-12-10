@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A; 
+    int B;
+    cout << "Ingrese el un valor A ";
+    cin >>A;
+    cout << "Ingrese el valor B ";
+    cin >>B;
+    int resultado;
+    if(A>B){
+        resultado=A;
+        cout << "El mayor es: "<<resultado;
+    }
+        else if (A<B){
+        resultado=B;
+        cout << "El mayor es: "<<resultado;
+        }
+        else{
+            cout <<A<<" y "<<B<<" son iguales.";
+        }
+
+
+    return 0;
+}
