@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    float pi;
+    pi = 3.1416;
+    float area;
+    float perimetro;
+    
+    cout<<"Ingrese el radio N: "; cin>>N;
+    area = pi*(N*N);
+    perimetro = pi*(N*2);
+    cout<<"Perimetro: "<<perimetro; 
+    cout<<"Area: "<<area;
+    
+    
+    return 0;
+}
