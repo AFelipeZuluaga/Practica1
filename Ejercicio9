@@ -12,7 +12,7 @@ int main()
     cout<<"Ingrese el radio N: "; cin>>N;
     area = pi*(N*N);
     perimetro = pi*(N*2);
-    cout<<"Perimetro: "<<perimetro; 
+    cout<<"Perimetro: "<<perimetro<<endl; 
     cout<<"Area: "<<area;
     
     
