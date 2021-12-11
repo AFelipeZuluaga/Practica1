@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    int s;
+    int i;
+    s=0;
+    i=1;
+    cout << "Ingrese el numero n: "; cin>>n;
+    while(i<=n){
+        s+=i;
+        i++;
+    }
+    cout<<"La sumatoria de 0 hasta "<<n<<" es "<< s;
+
+    return 0;
+}
