@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, M;
+    cout<<"Ingrese un numero N: "; cin>>N;
+    M=N;
+    while(N>0 | N<0){
+        cout<<"Ingrese un numero N: "; cin>>N;
+        if(N==0){
+            break;
+        }
+        else if(N>M){
+            M=N;
+        }
+        else{
+        }
+    }   
+    cout<<"El numero mayor es: "<<M;
+    return 0;
+}
