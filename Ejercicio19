@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, i, s;
+    i=1;
+    s=0;
+    cout<<"Ingrese un numero N :"; cin>>N;
+    while(i<=N){
+        if(N%i==0){
+            s+=i;
+            i++;
+        }
+        else{
+            i++;
+        }
+    }
+    if(s==N+1){
+        cout<<N<<" es un numero primo.";
+    }
+    else{
+        cout<<N<<" NO es un numero primo.";
+    }
+    return 0;
+}
