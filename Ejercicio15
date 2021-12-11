@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, S;
+    S=0;
+    while(N>0 | N<0){
+        cout<<"Ingrese los numeros N: "; cin>>N;
+        if(N>0){
+            S+=N;
+        }
+        else if(N<0){
+            S+=N;
+        }
+        else{
+            cout<<"El resultado de la sumatoria es: "<<S;
+            break;
+        }
+    }
+    return 0;
+}
