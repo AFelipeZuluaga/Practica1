@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N; 
+    int i; 
+    int divisores;
+    i = 1;
+    cout<<"Ingrese un numero N: "; cin>>N;
+    cout<<"Los divisores de N son: "<<endl;
+    while(i<=N){
+        if(N%i==0){
+            divisores = i;
+            cout<<divisores<<endl;
+        }
+        i++;
+    }
+    
+
+    return 0;
+}
