@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    int i;
+    i=1;
+    int resultado;
+    cout<<"Ingrese un número N: "; cin>>N;
+    while(i<=10){
+        resultado = i*N;
+        cout<<i<<"x"<<N<<"="<<resultado<<endl;
+        i++;
+    }
+    
+    
+    
+    return 0;
+}
