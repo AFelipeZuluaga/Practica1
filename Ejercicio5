@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A,B;
+    int res;
+    cout << "Ingrese un numero A: "; cin>>A;
+    cout << "Ingrese un numero B: "; cin>>B;
+    float div,total,C=A,D=B;
+    div=C/D;
+    res=A/B;
+    total=div-res;
+
+
+    if(total>0.5)
+        cout<<A<<"/"<<B<<"="<<res+1;
+    else{
+        cout<<A<<"/"<<B<<"="<<res;
+    }
+    return 0;
+}
