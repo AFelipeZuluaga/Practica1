@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A, B, Z;
+    cout<<"Ingrese un numero A: "; cin>>A;
+    cout<<"Ingrese un numero B: "; cin>>B;
+    if(A>B){
+        Z=A;
+    }
+    else{
+        Z=B;
+    }
+    while(true){
+        if(Z%A==0 && Z%B==0){
+            cout<<"El MCM de "<<A<<" y "<<B<<" es: "<<Z;
+            return Z;
+        }
+        else{
+            Z+=1;
+        }
+    }
+
+    return 0;
+}
