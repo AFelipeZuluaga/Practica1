@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N, B, NC=1;
+    cout<<"Ingrese un numero N: "; cin>>N;
+    B=N;
+    while(B>=10){
+        B = B/10;
+        NC++;
+    }
+    cout<<N<<" tiene "<<NC<<" digitos.";
+
+    return 0;
+}
