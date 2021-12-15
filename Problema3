@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int dia, mes;
+    cout<<"Ingrese el dia: "; cin>>dia;
+    cout<<"Ingrese el mes: "; cin>>mes;
+
+    if(dia>31){
+        cout<<dia<<" es un dia invalido"<<endl;
+        return 0;
+    }
+    if(mes>12){
+        cout<<mes<<" es un mes invalido"<<endl;
+        return 0;
+    }
+        while(mes==4 || mes==6 || mes==9 || mes==11){
+           if(dia>=31){
+               cout<<dia<<"/"<<mes<<" es una fecha invalida"<<endl;
+               return 0;
+           }
+           else{
+               cout<<dia<<"/"<<mes<<" es una fecha valida"<<endl;
+               return 0;
+           }
+        }
+        while(mes==2){
+            if(dia==29){
+                cout<<dia<<"/"<<mes<<" es valida en bisiesto"<<endl;
+                return 0;
+            }
+            else if(dia==30){
+                cout<<dia<<"/"<<mes<<" es una fecha invalida"<<endl;
+                return 0;
+            }
+            else{
+                cout<<dia<<"/"<<mes<<" es una fecha valida"<<endl;
+                return 0;
+            }
+    }
+    if(true){
+        cout<<dia<<"/"<<mes<<" es una fecha valida"<<endl;
+    }
+
+    return 0;
+}
