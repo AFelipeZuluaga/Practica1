@@ -1,0 +1,66 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int billetes50000=0, billetes20000=0, billetes10000=0, billetes5000=0, billetes2000=0, billetes1000=0;
+    int monedas500=0, monedas200=0, monedas100=0, monedas50=0;
+    int x;
+    cout<<"Ingrese la cantidad de dinero: "; cin>>x;
+    while(x>50000){
+        x = x-50000;
+        billetes50000 += 1;
+    }
+    while(x>20000){
+        x = x-20000;
+        billetes20000 += 1;
+    }
+    while(x>10000){
+        x = x-10000;
+        billetes10000 += 1;
+    }
+    while(x>5000){
+        x = x-5000;
+        billetes5000 += 1;
+    }
+    while(x>2000){
+        x = x-2000;
+        billetes2000 += 1;
+    }
+    while(x>1000){
+        x = x-1000;
+        billetes1000 += 1;
+    }
+    while(x>500){
+        x = x-500;
+        monedas500 += 1;
+    }
+    while(x>200){
+        x = x-200;
+        monedas200 += 1;
+    }
+    while(x>100){
+        x = x-100;
+        monedas100 += 1;
+    }
+    while(x>50){
+        x = x-50;
+        monedas50 += 1;
+    }
+    cout<<"50000: "<<billetes50000<<endl;
+    cout<<"20000: "<<billetes20000<<endl;
+    cout<<"10000: "<<billetes10000<<endl;
+    cout<<"5000: "<<billetes5000<<endl;
+    cout<<"2000: "<<billetes2000<<endl;
+    cout<<"1000: "<<billetes1000<<endl;
+    cout<<"500: "<<monedas500<<endl;
+    cout<<"200: "<<monedas200<<endl;
+    cout<<"100: "<<monedas100<<endl;
+    cout<<"50: "<<monedas50<<endl;
+    if(x<50){
+        cout<<"Faltante: "<<x;
+    }
+
+    return 0;
+}
