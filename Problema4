@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float den=1, n,e=1;
+    cout<<"Ingrese el numero de elementos que quiere usar en la aproximacion: "; cin>>n;
+    for(int i=1; i<n; i++){
+        den = den*i;
+        e = e + (1/den);
+    }
+    cout<<"e es aproximadamente: "<<e;
+
+    return 0;
+}
