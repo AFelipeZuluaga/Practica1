@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A, B, resultado;
+    char operador;
+    cout<<"Ingrese un valor A: "; cin>>A;
+    cout<<"Ingrese un valor B: "; cin>>B;
+    cout<<"Ingrese un operador ya sea +, -, *, /: "; cin>>operador;
+    switch(operador){
+        case'+':
+            resultado = A+B;
+            cout<<A<<"+"<<B<<"="<<resultado;
+            break;
+        case'-':
+            resultado = A-B;
+            cout<<A<<"-"<<B<<"="<<resultado;
+            break;
+        case'*':
+            resultado = A*B;
+            cout<<A<<"*"<<B<<"="<<resultado;
+            break;
+        case'/':
+            resultado = A/B;
+            cout<<A<<"/"<<B<<"="<<resultado;
+            break;
+        default:
+            cout<<"No ha ingresado uno de los operadores indicados.";
+            break;
+    }
+
+    return 0;
+}
