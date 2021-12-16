@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, s=0, x, p;
+    cout<<"Ingrese el valor N: "; cin>>n;
+    for(int i=1; n>0; i++){
+        x = n%10;
+        p = x*x;
+        if(x>2){
+            p = p*x;
+        }
+        s = s + p;
+        n = n/10;
+    }
+    cout<<"El resultado de la suma es: "<<s;
+    return 0;
+}
