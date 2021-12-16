@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c, x=0, sum=0, res;
+    cout<<"Ingrese los numeros a: "; cin>>a;
+    cout<<"Ingrese los numeros b: "; cin>>b;
+    cout<<"Ingrese los numeros c: "; cin>>c;
+    cout<<a;
+    x = x + a;
+    for (int i=2; i<c; i++){
+        if(a*i<c){
+            cout<<"+"<<a*i;
+            x = x + (a*i);
+        }
+        else{
+            break;
+        }
+    }
+    for (int i=1; i<c; i++){
+        if (b*i<c && b*i != b*a){
+            cout<<"+"<<b*i;
+            sum = sum + (b*i);
+
+        }
+        else if (b*i>c){
+            break;
+        }
+    }
+    res = sum + x;
+
+    cout<<"="<<res;
+    return 0;
+}
